@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flexCenter {
+  @apply flex items-center justify-center;
+}
+.flexStart {
+  @apply flex items-center justify-start;
+}
+
+.socialButton {
+  @apply h-[45px] w-[280px] sm:h-[45px] sm:w-[303px] flexCenter bg-grey rounded-md font-semibold hover:bg-green hover:text-dark-grey;
+}
